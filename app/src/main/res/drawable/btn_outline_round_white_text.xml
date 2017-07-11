@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Button Pressed -->
+    <item android:state_pressed="true" android:color="@color/textColor"/>
+    <!-- Button Disabled -->
+    <item android:state_enabled="false" android:color="@color/textColorDark2"/>
+    <!-- Button Default Image -->
+    <item android:color="@color/textColorDark"/>
+</selector>
