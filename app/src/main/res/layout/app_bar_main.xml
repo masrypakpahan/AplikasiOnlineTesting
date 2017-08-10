@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="cbt.pji.cbt.aplikasionlinetesting.com.pji.com.aplikasionlinetesting.MainActivity">
+    tools:context="com.pji.cbt.aplikasionlinetesting.ui.activities.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

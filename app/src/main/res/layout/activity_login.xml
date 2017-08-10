@@ -3,7 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:fitsSystemWindows="true"
-    android:background="@color/colorPrimary"
+    android:background="#FAFAFA"
     android:paddingBottom="24dp">
 
     <LinearLayout
@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@color/white"
+            android:background="#EEEEEE"
             android:paddingTop="10sp"
             android:paddingLeft="10sp"
             android:paddingRight="10sp">
@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp">
-                <EditText android:id="@+id/input_email"
+                <EditText android:id="@+id/input_username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="textEmailAddress"
@@ -68,23 +68,15 @@
 
             <Button
                 android:id="@+id/btn_login"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:layout_marginBottom="24dp"
-                android:padding="12dp"
-                android:textColor="@color/white"
-                android:background="@color/blue_600"
-                android:text="Login"/>
+                android:layout_width="141dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:text="Login"
+                android:background="#448AFF"
+                android:textColor="#fff"
+                android:textStyle="bold" />
 
-            <!--<TextView
-                android:id="@+id/link_signup"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
-                android:text="Not a member? Register here!"
-                android:gravity="center"
-                android:textSize="16dip"/>-->
         </LinearLayout>
     </LinearLayout>
 </ScrollView>

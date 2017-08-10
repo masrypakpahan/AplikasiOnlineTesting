@@ -1,27 +1,30 @@
-package com.pji.cbt.aplikasionlinetesting;
+package com.pji.cbt.aplikasionlinetesting.ui.dialog;
 
 import android.content.Intent;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.pji.cbt.aplikasionlinetesting.ui.activities.EditProfilActivity;
+import com.pji.cbt.aplikasionlinetesting.ui.activities.MainActivity;
+
 import butterknife.OnClick;
 import cbt.pji.cbt.aplikasionlinetesting.R;
 
-public class ResetPassSuccessDialog extends AppCompatActivity {
+public class EditProfilSuccessDialog extends AppCompatActivity {
 
-    private static final String TAG = "ResetPassSuccessDialog";
-    ResetPassActivity mActivity;
+    private static final String TAG = "EditProfilSuccessDialog";
+    EditProfilActivity mActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reset_pass_success_dialog);
+        setContentView(R.layout.activity_edit_profil_success_dialog);
     }
 
-    public ResetPassSuccessDialog(){}
+    public EditProfilSuccessDialog(){}
 
-    public ResetPassSuccessDialog(ResetPassActivity mActivity) {
+    public EditProfilSuccessDialog(EditProfilActivity mActivity) {
         this.mActivity = mActivity;
         show(mActivity.getSupportFragmentManager(), TAG);
     }
@@ -29,11 +32,10 @@ public class ResetPassSuccessDialog extends AppCompatActivity {
     private void show(FragmentManager supportFragmentManager, String tag) {
     }
 
-    @OnClick(R.id.btn_resetpass_success)
+    @OnClick(R.id.btn_editprofil_success)
     void klikOk()
     {
         startActivity(new Intent(this, MainActivity.class));
         finish();
     }
-
 }

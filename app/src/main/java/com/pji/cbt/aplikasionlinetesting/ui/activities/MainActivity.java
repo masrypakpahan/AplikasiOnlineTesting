@@ -1,10 +1,12 @@
-package com.pji.cbt.aplikasionlinetesting;
+package com.pji.cbt.aplikasionlinetesting.ui.activities;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.view.Menu;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,13 +15,24 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.ImageButton;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.pji.cbt.aplikasionlinetesting.ui.dialog.StartTestDialog;
 
 import cbt.pji.cbt.aplikasionlinetesting.R;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+
+    private SharedPreferences pref;
+    private SharedPreferences.Editor editor;
+    private final String KEY_NAME = "name";
     public static Activity aMain;
+    private ImageButton Matematika, IPS, Olahraga, Sains;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +58,52 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+        TextView txtUsername = (TextView) findViewById(R.id.txtUsername);
+        Intent intent = getIntent();
+        String username = intent.getStringExtra("username");
+       // Log.e("Second Screen", username);
+        txtUsername.setText(username);
+
+        Matematika = (ImageButton)findViewById(R.id.matematika);
+        Sains=(ImageButton)findViewById(R.id.sains);
+        IPS=(ImageButton)findViewById(R.id.ips);
+        Olahraga=(ImageButton)findViewById(R.id.olahraga);
+
+        Matematika.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, StartTestDialog.class); // dari MainActivity/posisi saat ini ke ContentProvider
+                startActivity(intent);
+            }
+        });
+
+        Sains.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+//                Intent intent = new Intent(MainActivity.this, SainsActivity.class); // dari MainActivity/posisi saat ini ke ContentProvider
+//                startActivity(intent);
+            }
+        });
+
+        IPS.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+//                Intent intent = new Intent(MainActivity.this, IPSActivity.class); // dari MainActivity/posisi saat ini ke ContentProvider
+//                startActivity(intent);
+            }
+        });
+
+        Olahraga.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+//                Intent intent = new Intent(MainActivity.this, OlahragaActivity.class); // dari MainActivity/posisi saat ini ke ContentProvider
+//                startActivity(intent);
+            }
+        });
+
+
     }
 
     @Override

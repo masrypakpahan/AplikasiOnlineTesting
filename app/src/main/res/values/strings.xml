@@ -1,8 +1,154 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Aplikasi Online Testing</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Name</string>
+    <string name="student_number">Student Number</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="pilih">Gender </string>
+    <string name="date">Tanggal</string>
+    <string name="time">Pukul</string>
+    <string name="register"></string>
+    <string name="hasil">klikHasil</string>
+    <string name="submit">Submit</string>
+    <string name="output">Jawaban yang dipilih : </string>
+    <string name="A">2.5</string>
+    <string name="B">2.45</string>
+    <string name="C">3</string>
+    <string name="D">2.6</string>
+    <string name="E">2</string>
+    <string name="soalMatematika">1. Berapakah Hasil dari 23/9?</string>
+
+    <string name="teks">Pilih Hobby (Bisa lebih dari 1: )</string>
+    <string name="H1">Membaca</string>
+    <string name="H2">Menulis</string>
+    <string name="H3">Berenang</string>
+    <string name="H4">Bernyanyi</string>
+    <string name="H5">Menari</string>
+    <string name="H6">Lainnya</string>
+
+    <string name="dialog_delete">Are you sure you want to logout from this page?</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_login2">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="duration">Duration</string>
+    <string name="category">Catyegory</string>
+    <string name="status">Status</string>
+    <string name="questionType">Question Typpe</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="user">User</string>
+    <string name="testId">TestId</string>
+    <string name="descriptio">TestId</string>
+    <string name="description">Description</string>
+    <string name="questioncategory">QuestionCategory</string>
+    <string name="timelimit">Time Limit</string>
+
+
+    string
+    <string name="txt_about">Pradipta Jatis Indonesia, PT (PJI)formerly named Pactera Jatis Indonesia  established in 2014. In 2016 Indivara Group has 100% ownership of this company and change the name into Pradipta Jatis Indonesia.
+        PJI offering IT professional capabilities to our clients, ranges from IT services, managed service, talent acquisitions, application testing and Software Factory. Since the first year, PJI has been delivering world-class IT services to clients in South East Asia, Japan and ANZ region.</string>
+    <string name="txt_pji">PT. PRADIPTA JATIS INDONESIA
+                            The Kensington Commercial No 11 c
+                            Jl. Boulevard Raya, Kelapa Gading
+                            Jakarta Utara 14240, Indonesia
+                            Phone: +62 21 22452355
+                            Fax: +62 21 24520984</string>
+    <string name="title_activity_settings2">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_ipaddress">IP Address</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_ip_address">IP Address</string>
+    <string name="pref_default_ip_address">1.1.1.12</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+
 </resources>

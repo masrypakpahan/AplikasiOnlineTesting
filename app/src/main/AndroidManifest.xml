@@ -2,30 +2,46 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cbt.pji.cbt.aplikasionlinetesting">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher1"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.pji.cbt.aplikasionlinetesting.LoginActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name="com.pji.cbt.aplikasionlinetesting.ui.activities.SplashActivity"
+            android:label="@string/app_name">
+
+            <!-- android:theme="@style/AppTheme.DarkActionBar" -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-        <activity android:name="com.pji.cbt.aplikasionlinetesting.MainActivity" >
-
-        </activity>
-        <activity android:name="com.pji.cbt.aplikasionlinetesting.EditProfilActivity" />
-        <activity android:name="com.pji.cbt.aplikasionlinetesting.EditProfilSuccessDialog" />
-        <activity android:name="com.pji.cbt.aplikasionlinetesting.ResetPassActivity" />
-        <activity android:name="com.pji.cbt.aplikasionlinetesting.ResetPassSuccessDialog" />
+        <activity android:name="com.pji.cbt.aplikasionlinetesting.ui.activities.LoginActivity" />
+        <activity android:name="com.pji.cbt.aplikasionlinetesting.ui.activities.MainActivity" />
+        <activity android:name="com.pji.cbt.aplikasionlinetesting.ui.activities.EditProfilActivity" />
+        <activity android:name="com.pji.cbt.aplikasionlinetesting.ui.dialog.EditProfilSuccessDialog" />
+        <activity android:name="com.pji.cbt.aplikasionlinetesting.ui.activities.ResetPassActivity" />
+        <activity android:name="com.pji.cbt.aplikasionlinetesting.ui.dialog.ResetPassSuccessDialog" />
+        <activity android:name="com.pji.cbt.aplikasionlinetesting.ui.dialog.StartTestDialog" />
+        <activity android:name="com.pji.cbt.aplikasionlinetesting.ui.activities.TestActivty" />
+        <activity android:name="com.pji.cbt.aplikasionlinetesting.ui.activities.TesterUserActivity" />
+        <activity android:name="com.pji.cbt.aplikasionlinetesting.ui.activities.CategoryActivity" />
+        <activity android:name="com.pji.cbt.aplikasionlinetesting.ui.activities.AboutActivity" />
+        <activity android:name="com.pji.cbt.aplikasionlinetesting.ui.activities.QuestionActivity" />
+        <activity
+            android:name="com.pji.cbt.aplikasionlinetesting.ui.activities.SettingsActivity"
+            android:label="@string/title_activity_settings2"></activity>
     </application>
 
 </manifest>
