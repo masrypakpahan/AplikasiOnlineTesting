@@ -3,6 +3,7 @@ package com.pji.cbt.aplikasionlinetesting.ui.activities;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
+import android.os.Parcelable;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBar;
@@ -14,6 +15,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.pji.cbt.aplikasionlinetesting.data.beans.Testuser;
 import com.pji.cbt.aplikasionlinetesting.network.API;
 import com.pji.cbt.aplikasionlinetesting.network.RestUser;
 import com.pji.cbt.aplikasionlinetesting.data.beans.Category;
@@ -41,9 +43,9 @@ public class QuestionActivity extends AppCompatActivity implements RecyclerViewI
     private API api;
 
 
-   public static void start(Context context, Category test) {
+   public static void start(Context context, Testuser test) {
         Intent intent = new Intent(context,QuestionActivity.class);
-        intent.putExtra(QuestionActivity.class.getSimpleName() , test);
+        intent.putExtra(QuestionActivity.class.getSimpleName()  , (Parcelable) test);
         context.startActivity(intent);
     }
     @Override
@@ -51,7 +53,7 @@ public class QuestionActivity extends AppCompatActivity implements RecyclerViewI
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question);
 
-        category = getIntent().getParcelableExtra(CategoryActivity.class.getSimpleName());
+        category = getIntent().getParcelableExtra(TesterUserActivity.class.getSimpleName());
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle (category.getQuestionCategory());
         actionBar.setDisplayHomeAsUpEnabled(true);

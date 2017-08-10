@@ -76,6 +76,6 @@ package com.pji.cbt.aplikasionlinetesting.ui.activities;
 
         @Override
         public void onItemClick(int position,View view) {
-            QuestionActivity.start(this,categoryAdapter.getItem(position));
+          //  QuestionActivity.start(this,categoryAdapter.getItem(position));
         }
     }
