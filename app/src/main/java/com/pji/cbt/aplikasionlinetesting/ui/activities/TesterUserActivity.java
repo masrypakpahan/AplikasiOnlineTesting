@@ -139,6 +139,6 @@ public class TesterUserActivity extends AppCompatActivity implements RecyclerVie
 
     @Override
     public void onItemClick(int position, View view) {
-      //  QuestionActivity.start(this, testerAdapter.getItem(position));
+        QuestionActivity.start(this, testerAdapter.getItem(position));
     }
 }
